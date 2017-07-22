@@ -21,9 +21,6 @@ else:
 
 ### This is for addition-medium
 
-import random
-from random import randint
-
 numberthree = randint(10, 50)
 numberfour = randint(10, 50)
 
@@ -43,9 +40,6 @@ else:
 
 ### This is for addition-hard
 
-import random
-from random import randint
-
 numberfive = randint(50, 1000)
 numbersix = randint(50, 1000)
 
@@ -63,9 +57,6 @@ else:
     finalsumhard = str(sumofrandinthard)
     print 'Sorry. The correct answer is ' + finalsumhard
 ### This is for multiplication-easy
-
-import random
-from random import randint
 
 numberseven = randint(0, 10)
 numbereight = randint(0, 10)
@@ -86,9 +77,6 @@ else:
 
 ### This is for multiplication-medium
 
-import random
-from random import randint
-
 numbernine = randint(10, 50)
 numberten = randint(10, 50)
 
@@ -108,9 +96,6 @@ else:
 
 ### This is for multiplication-hard
 
-import random
-from random import randint
-
 numbera = randint(50, 1000)
 numberb = randint(50, 1000)
 
@@ -127,3 +112,88 @@ if producthard == userproducthard:
 else:
     finalproducthard = str(producthard)
     print 'Sorry. The correct answer is ' + finalproducthard
+### This is for subtraction-easy
+
+numberz = randint(0, 10)
+numbery = randint(0, 10)
+
+nz = str(numberz)
+ny = str(numbery)
+
+if numberz >= numbery:
+    print nz + "-" + ny + "="
+    user_difference = raw_input("Enter answer here:")
+    difference = numberz - numbery
+    userdifference = int(user_difference)
+    if userdifference == difference:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifference = str(difference)
+        print 'Sorry. The correct answer is ' + finaldifference
+else:
+    print ny + "-" + nz + "="
+    user_difference = raw_input("Enter answer here:")
+    difference = numbery - numberz
+    userdifference = int(user_difference)
+    if userdifference == difference:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifference = str(difference)
+        print 'Sorry. The correct answer is ' + finaldifference
+
+### This is for subtraction-med
+
+numbero = randint(10, 50)
+numberp = randint(10, 50)
+
+no = str(numbero)
+np = str(numberp)
+
+if numbero >= numberp:
+    print no + "-" + np + "="
+    user_differencemed = raw_input("Enter answer here:")
+    differencemed = numbero - numberp
+    userdifferencemed = int(user_differencemed)
+    if userdifferencemed == differencemed:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifferencemed = str(differencemed)
+        print 'Sorry. The correct answer is ' + finaldifferencemed
+else:
+    print np + "-" + no + "="
+    user_differencemed = raw_input("Enter answer here:")
+    differencemed = numberp - numbero
+    userdifferencemed = int(user_differencemed)
+    if userdifferencemed == differencemed:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifferencemed = str(differencemed)
+        print 'Sorry. The correct answer is ' + finaldifferencemed
+### This is for subtraction-hard
+
+numberj = randint(50, 1000)
+numberk = randint(50, 1000)
+
+nj = str(numberj)
+nk = str(numberk)
+
+if numberj >= numberk:
+    print nj + "-" + nk + "="
+    user_differencehard = raw_input("Enter answer here:")
+    differencehard = numberj - numberk
+    userdifferencehard = int(user_differencehard)
+    if userdifferencehard == differencehard:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifferencehard = str(differencehard)
+        print 'Sorry. The correct answer is ' + finaldifferencehard
+else:
+    print nk + "-" + nj + "="
+    user_differencehard = raw_input("Enter answer here:")
+    differencehard = numberk - numberj
+    userdifferencehard = int(user_differencehard)
+    if userdifferencehard == differencehard:
+        print 'Congrats! Your answer is correct.'
+    else:
+        finaldifferencehard = str(differencehard)
+        print 'Sorry. The correct answer is ' + finaldifferencehard
