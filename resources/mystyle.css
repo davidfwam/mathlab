@@ -1,0 +1,25 @@
+body {
+    background-image: url(orangemath2.jpg);
+    width: 1440px;
+    height: 1280px;
+}
+
+#hometag {
+    background-image: url(mathhome2.jpg);
+    background-size: inherit;
+    background-size: 250px 100px;
+    opacity: 0.8;
+
+
+    background-repeat: no-repeat;
+}
+
+#practicetag {
+    background-image: url(mathpractice2.jpg);
+    background-size: inherit;
+    background-size: 250px 100px;
+
+
+    background-repeat: no-repeat;
+
+}
