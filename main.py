@@ -14,12 +14,37 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+import jinja2
+import os
 import webapp2
+import sys
+
+sys.path.append('/source')
+
+from MathLab.py import AdditionEasy
+from MathLab.py import AdditionMedium
+from MathLab.py import AdditionHard
+from MathLab.py import MultiplicationEasy
+from MathLab.py import MultiplicationMedium
+from MathLab.py import MultiplactionHard
+from MathLab.py import SubtractionEasy
+from MathLab.py import SubtractionMedium
+from MathLab.py import SubtractionHard
+from MathLab.py import DivisionEasy
+from MathLab.py import DivisionMedium
+from MathLab.py import DivisionHard
+
+jinja_environment = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname('resources')))
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Hello world!')
+        template = jinja_environment.get_template('resources/index.html')
+        self.response.out.write(template.render())
+
+class
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
+
 ], debug=True)
