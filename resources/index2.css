@@ -1,0 +1,75 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+body {
+    background-image: url(orangemath2.jpg);
+    width: 1440px;
+    height: 1280px;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 1380px;
+    height: 1024px;
+    background-color: white;
+    background-position: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 25px;
+
+}
+
+.flex-item {
+  text-align: center;
+  line-height: 75px;
+    background-color: orange;
+    width: 250px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    background-position: center;
+}
+
+#hometag {
+    background-image: url(mathhome2.jpg);
+    background-size: inherit;
+    background-size: 250px 100px;
+    opacity: 0.8;
+
+
+    background-repeat: no-repeat;
+}
+
+#practicetag {
+    background-image: url(mathpractice2.jpg);
+    background-size: inherit;
+    background-size: 250px 100px;
+
+
+    background-repeat: no-repeat;
+
+}
+#walkthroughtag {
+    background-image: url(walkthroughpic2.jpg);
+    background-size: inherit;
+    background-size: 250px 100px;
+  }
+  #referencetag {
+      background-image: url(referencepic2.jpg);
+      background-size: inherit;
+      background-size: 250px 100px;
+    }
+    #aboutustag {
+        background-image: url(contactpic23.jpg);
+        background-size: inherit;
+        background-size: 250px 100px;
+      }
+html{
+    position: relative;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}

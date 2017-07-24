@@ -1,50 +1,85 @@
 <!DOCTYPE html>
 <html>
+<title>homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="mystyle.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="script.js"></script>
-<head>
-  <title> homepage </title>
-  <center> <h1> MATHLAB </h1> </center>
-  <style>
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    width: 1360px;
-    height: 1024px;
-    background-color: white;
-    background-position: center;
-    border: 1px solid black;
-    border-radius: 25px;
-    padding: 25px;
-    margin: 25px;
-}
-
-.flex-item {
-  text-align: center;
-  line-height: 75px;
-    background-color: orange;
-    width: 250px;
-    height: 75px;
-    border: 1px solid black;
-    border-radius: 25px;
-    margin: 10px;
-    background-position: center;
 
 
-}
-  </style>
-</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.page-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
 
-<body>
 
-<div class="flex-container">
-  <center> <div class="flex-item" id ="hometag">Home</div> </center>
-  <center> <div class="flex-item" id = "practicetag">Practice</div> </center>
-  <center> <div class="flex-item" id = "walkthroughtag">Walkthroughs</div> </center>
-  <center> <div class="flex-item" id = "referencetag">References</div> </center>
-  <center> <div class="flex-item" id = "aboutustag">About Us</div> </center>
+<!-- Navbar -->
+<div class="topmenu">
+  <div class="page-bar page-orange page-card-2 page-left-align page-large">
+    <a class="baritemmenu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="baritem">Home</a>
+    <a href="#" class="baritem">Practice</a>
+    <a href="#" class="baritem">Walkthroughs</a>
+    <a href="#" class="baritem">References</a>
+    <a href="#" class="baritem">About Us</a>
+  </div>
+
+<!-- Header -->
+<header class="page-container page-orange page-center" style="padding:128px 16px">
+  <h1 class="pagemargin pagejumbo">MATHLAB</h1>
+  <p class="page-xlarge">by The Mathlab Team</p>
+  <button class="page-button page-black page-padding-large page-large pagemargin-top">Choose Your Track</button>
+</header>
+
+<!-- First Grid -->
+<div class="page-row-padding page-padding-64 page-container">
+  <div class="pagecontent">
+    <div class="pagetwothird">
+      <h1>abcdefghijklmnoqrstuvwxyz</h1>
+      <h5 class="page-padding-32">abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz
+      abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz
+    abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz</p>
+    </div>
+
+    <div class="page-third page-center">
+      <i class="fa fa-anchor page-padding-64 page-orange"></i>
+    </div>
+  </div>
 </div>
 
+<!-- Second Grid -->
+<div class="page-row-padding page-light-grey page-padding-64 page-container">
+  <div class="pagecontent">
+    <div class="page-center">
+      <i class="fa fa-coffee page-padding-64 page-orange pagemargin-right"></i>
+    </div>
+
+    <div class="twothird">
+      <h1>abcdefghijklmnoqrstuvwxyz</h1>
+      <h5 class="padding-32-px">abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz</h5>
+
+      <p class="page-text-grey">abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz
+      abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz
+    abcdefghijklmnoqrstuvwxyzabcdefghijklmnoqrstuvwxyz</p>
+    </div>
+  </div>
+</div>
+
+<div class="page-container page-black page-center page-opacity page-padding-64">
+    <h1 class="pagemargin page-xlarge">Quote of the day: abcdefghijklmnoqrstuvwxyz</h1>
+</div>
+
+<!-- Footer -->
+<footer class="page-container page-padding-64 page-center page-opacity">
+  <div class="page-xlarge page-padding-32">
+    <i class="facebook hover-opacity"> Facebook </i>
+    <i class="instagram hover-opacity"> Instagram </i>
+    <i class="snapchat hover-opacity"> Snapchat </i>
+
+    <i class="twitter hover-opacity"> Twitter </i>
+    <i class="inkedin hover-opacity"></i>
+ </div>
+ <p>abcdefghijklmnoqrstuvwxyz<a href="" target="">abcdefghijklmnoqrstuvwxyz</a></p>
+</footer>
 </body>
 </html>
