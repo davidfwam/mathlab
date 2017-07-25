@@ -19,30 +19,28 @@ import os
 import webapp2
 import sys
 
-sys.path.append('/source')
+sys.path.append('source/')
 
-from MathLab.py import AdditionEasy
-from MathLab.py import AdditionMedium
-from MathLab.py import AdditionHard
-from MathLab.py import MultiplicationEasy
-from MathLab.py import MultiplicationMedium
-from MathLab.py import MultiplactionHard
-from MathLab.py import SubtractionEasy
-from MathLab.py import SubtractionMedium
-from MathLab.py import SubtractionHard
-from MathLab.py import DivisionEasy
-from MathLab.py import DivisionMedium
-from MathLab.py import DivisionHard
+from MathLab import AdditionEasy
+from MathLab import AdditionMedium
+from MathLab import AdditionHard
+from MathLab import MultiplicationEasy
+from MathLab import MultiplicationMedium
+from MathLab import MultiplactionHard
+from MathLab import SubtractionEasy
+from MathLab import SubtractionMedium
+from MathLab import SubtractionHard
+from MathLab import DivisionEasy
+from MathLab import DivisionMedium
+from MathLab import DivisionHard
 
 jinja_environment = jinja2.Environment(
-    loader=jinja2.FileSystemLoader(os.path.dirname('resources')))
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         template = jinja_environment.get_template('resources/index.html')
         self.response.out.write(template.render())
-
-class
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

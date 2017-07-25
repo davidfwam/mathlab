@@ -75,10 +75,10 @@ class MultiplicationEasy(webapp2.RequestHandler):
         user_product = raw_input("Enter product here:")
         product = numberseven * numbereight
         userproduct = int(user_product)
-            if product == userproduct:
+        if product == userproduct:
                 self.response.write('Congrats! Your answer is correct.')
 
-            else:
+        else:
                 finalproduct = str(product)
                 self.response.write('Sorry. The correct answer is ' + finalproduct)
 
@@ -225,7 +225,7 @@ class DivisionEasy(webapp2.RequestHandler):
             q = number01 / number02
             userq = int(user_q)
             if userq == q:
-        self.response.write('Congrats! Your answer is correct.')
+                self.response.write('Congrats! Your answer is correct.')
             else:
                 finalq = str(q)
                 self.response.write('Sorry. The correct answer is ' + finalq)
@@ -298,4 +298,4 @@ class DivisionHard(webapp2.RequestHandler):
                 self.response.write('Congrats! Your answer is correct.')
             else:
                 finalqhard = str(qhard)
-                self.response.write('Sorry. The correct answer is ' + finalqhard)å
+                self.response.write('Sorry. The correct answer is ' + finalqhard)
