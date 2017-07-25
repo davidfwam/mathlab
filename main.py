@@ -21,19 +21,6 @@ import sys
 
 sys.path.append('source/')
 
-from MathLab import AdditionEasy
-from MathLab import AdditionMedium
-from MathLab import AdditionHard
-from MathLab import MultiplicationEasy
-from MathLab import MultiplicationMedium
-from MathLab import MultiplactionHard
-from MathLab import SubtractionEasy
-from MathLab import SubtractionMedium
-from MathLab import SubtractionHard
-from MathLab import DivisionEasy
-from MathLab import DivisionMedium
-from MathLab import DivisionHard
-
 jinja_environment = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)))
 
