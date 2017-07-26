@@ -4,38 +4,45 @@ var numberk = Math.floor(Math.random() * 51);
 var nj = (numberj).toString();
 var nk = (numberk).toString();
 function SubtractionMed(){
-if (numberj >= numberk){
+  if (numberj >= numberk){
     var user_differencemed = $('#user_input').val();
     var differencemed = numberj - numberk;
     var userdifferencemed = Number(user_differencemed);
     if (userdifferencemed == differencemed){
-        $(".response").append("<p> Congrats! Your answer is correct. </p>");
-      }
-    else{
-        var finaldifferencemed = differencemed.toString();
-        $(".response").append("<p> Sorry. The correct answer is " + finaldifferencemed + ".</p>");
-      }
+      $(".response").append("<p> Congrats! Your answer is correct. </p>");
     }
-else{
+    else{
+      var finaldifferencemed = differencemed.toString();
+      $(".response").append("<p> Sorry. The correct answer is " + finaldifferencemed + ".</p>");
+    }
+  }
+  else{
     var user_differencemed = $('#user_input').val();
     var differencemed = numberk - numberj;
     var userdifferencemed = Number(user_differencemed);
     if (userdifferencemed == differencemed){
-        $(".response").append("<p> Congrats! Your answer is correct. </p>");
-      }
+      $(".response").append("<p> Congrats! Your answer is correct. </p>");
+    }
     else{
-        finaldifferencemed = differencemed.toString();
-        $(".response").append("<p> Sorry. The correct answer is " + finaldifferencemed + ".</p>");
-      }
-}
+      finaldifferencemed = differencemed.toString();
+      $(".response").append("<p> Sorry. The correct answer is " + finaldifferencemed + ".</p>");
+    }
+  }
 }
 function setup(){
   if (numberj >= numberk){
               $(".function").append("<p>" + nj + "-" + nk + "= </p>");
-            }
+  }
   else {
             $(".function").append("<p>" + nk + "-" + nj + "= </p>");
-          }
-          $("#submit_button").click(SubtractionMed);
+  }
+  $("#user_input").keydown(function(event) {
+
+      if (event.keyCode == 13) {
+        event.preventDefault();
+        console.log("Got here 1");
+        SubtractionMed();
         }
+      return true;});
+}
 $(document).ready(setup)

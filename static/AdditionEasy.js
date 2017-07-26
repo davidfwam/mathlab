@@ -25,8 +25,10 @@ function setup() {
 
   $("#user_input").keydown(function(event) {
 
-      if (event.keyCode == 13) {event.preventDefault(); console.log("Got here 1")
-          AdditionEasy();
+      if (event.keyCode == 13) {
+        event.preventDefault();
+        console.log("Got here 1");
+        AdditionEasy();
         }
       return true;});
 }

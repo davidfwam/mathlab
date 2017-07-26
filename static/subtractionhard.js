@@ -37,6 +37,13 @@ function setup(){
   else {
             $(".function").append("<p>" + nk + "-" + nj + "= </p>");
           }
-          $("#submit_button").click(SubtractionHard);
+          $("#user_input").keydown(function(event) {
+
+              if (event.keyCode == 13) {
+                event.preventDefault();
+                console.log("Got here 1");
+                SubtractionHard();
+                }
+              return true;});
         }
 $(document).ready(setup)
