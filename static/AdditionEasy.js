@@ -22,6 +22,8 @@ else{
 function setup() {
   $(".function").append("<p>" + n1 + "+" + n2 + "= </p>");
   $("#submit_button").click(AdditionEasy);
- }
- 
+
+
+}
+
  $(document).ready(setup)
