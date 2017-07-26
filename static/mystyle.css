@@ -1,7 +1,15 @@
 /* del.CSS 4.04 Apr 2017 by Jan Egil and Borge Refsnes */
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{
+  box-sizing:border-box
+  }*,*:before,*:after
+  {box-sizing:inherit
+  }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+html
+{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%
+  }
+body{margin:0
+}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
@@ -38,7 +46,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .del-table td,.del-table th,.del-table-all td,.del-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .del-table th:first-child,.del-table td:first-child,.del-table-all th:first-child,.del-table-all td:first-child{padding-left:16px}
 .page-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.page-button:hover{color:#000!important;background-color:#ccc!important}
+.page-button:hover{color:#000;background-color:#ccc}
 .page-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .page-button:disabled{cursor:not-allowed;opacity:0.3}:disabled{pointer-events:none}
 .page-bar-block .del-dropdown-hover .page-button,.page-bar-block .del-dropdown-click .page-button{width:100%;text-align:left;padding:8px 16px}
@@ -49,7 +57,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .page-bar .page-button{white-space:normal}
 
 .difficulty-button{border:none;display:inline-block;outline:0;padding:4px 8px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
-.difficulty-button:hover{color:#000!important;background-color:#ccc!important}
+.difficulty-button:hover{color:#000;background-color:#ccc}
 .difficulty-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .difficulty-button:disabled{cursor:not-allowed;opacity:0.3}:disabled{pointer-events:none}
 .page-bar-block .del-dropdown-hover .difficulty-button,.page-bar-block .del-dropdown-click .difficulty-button{width:100%;text-align:left;padding:4px 8px}
@@ -60,34 +68,119 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .page-bar .difficulty-button{white-space:normal}
 .page-bar{width:100%;overflow:hidden}.page-center .page-bar{display:inline-block;width:auto}
 .page-bar .page-bar-item{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block}
-.page-bar .del-dropdown-hover,.page-bar .del-dropdown-click{position:static;float:left}
+.page-bar .del-dropdown-hover .page-bar .del-dropdown-click{position:static;float:left}
 
-.page-bar-block .page-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;outline:none;white-space:normal;float:none}
-.page-bar-block.page-center .page-bar-item{text-align:center}.del-block{display:block;width:100%}
-.page-container:after,.page-container:before,.del-panel:after,.del-panel:before,.del-row:after,.del-row:before,.page-row-padding:after,.page-row-padding:before,
+.page-bar-block,.page-bar-item{
+  width:100%;
+  display:block;
+  padding:8px 16px;
+  text-align:left;
+  border:none;
+  outline:none;
+  white-space:normal;
+  float:none
+  }
 
-.pagecontent{max-width:980px;margin:auto}.del-rest{overflow:hidden}
+.page-bar-block.page-center,.page-bar-item{
+  text-align:center;
+  }
 
+.del-block{
+    display:block;width:100%;
+  }
 
+.pagecontent{
+  max-width:980px;margin:auto;
+  }
 
-.page-row-padding,.page-row-padding>.page-row-padding>.page-third,.page-row-padding>.pagetwothird,.page-row-padding>.page-row-padding>.page-row-padding>{padding:0 8px}
-.page-container{padding:0.01em 16px}
+.del-rest{
+    overflow:hidden;
+  }
 
-.page-card,.page-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
-.page-card-4:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.page-row-padding,.page-row-padding>.page-row-padding>.page-third,.page-row-padding>
+.pagetwothird,.page-row-padding>.page-row-padding>.page-row-padding>{
+  padding:0 8px;
+}
 
-.page-opacity,.hover-opacity:hover{opacity:0.60}.page-opacity-off,.hover-opacity-off:hover{opacity:1}
-.page-opacity-max{opacity:0.25}.page-opacity-min{opacity:0.75}
+.page-container{
+  padding:0.01em 16px;
+  }
 
-.page-xlarge{font-size:24px!important}.pagejumbo{font-size:64px!important}
-.page-left-align{text-align:center!important}.page-center{text-align:center!important}
+.page-card,.page-card-2{
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  }
 
-.pagemargin{margin:16px!important}.pagemargin-top{margin-top:16px!important}.pagemargin-bottom{margin-bottom:16px!important}
-.pagemargin-left{margin-left:16px!important}.pagemargin-right{margin-right:16px!important}
-.padding-32-px{padding-top:32px!important;padding-bottom:32px!important}
-.page-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.page-card-4:hover{
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+  }
+
+.page-opacity,.hover-opacity:hover{
+  opacity:0.60
+  }
+
+.page-opacity-off,.hover-opacity-off:hover{
+    opacity:1}
+
+.page-opacity-max{
+  opacity:0.25
+  }
+
+.page-opacity-min{
+    opacity:0.75}
+
+.page-xlarge{
+  font-size:24px
+  }
+.pagejumbo{
+  font-size:64px
+  }
+
+.page-left-align{
+  text-align:center;
+  }
+
+  .page-center{
+    text-align:center;
+  }
+
+.pagemargin{
+  margin:16px;
+  }
+
+.pagemargin-top{
+  margin-top:16px;
+  }
+
+.pagemargin-bottom{
+  margin-bottom:16px;
+  }
+.pagemargin-left{
+  margin-left:16px;
+  }
+  .pagemargin-right{
+    margin-right:16px;
+  }
+.padding-32-px{
+  padding-top:32px;
+  padding-bottom:32px;
+  }
+.page-padding-64{
+  padding-top:64px;
+  padding-bottom:64px;
+  }
 
 /* Colors */
-.page-orange,.del-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
-.page-black,.del-hover-black:hover{color:#fff!important;background-color:#000!important}
-.page-text-grey:hover{color:#757575}
+
+.page-orange,.del-hover-orange:hover{
+  color:#000;
+  background-color:#ff9800;
+  }
+
+.page-black,.del-hover-black:hover{
+  color:#fff;
+  background-color:#000;
+  }
+
+.page-text-grey:hover{
+  color:#757575;
+  }
