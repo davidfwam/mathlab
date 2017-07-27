@@ -1,8 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <title>homepage</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+  <style>
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
+  </style>
+</head>
+    <title>homepage</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/mystyle.css">
   <link rel="stylesheet" href="mystyle.css">
 
@@ -14,36 +41,38 @@
 
 
       <!-- Navbar -->
-      <div class="topmenu">
-        <div class="page-bar page-orange page-card-2 page-left-align page-large">
-          <a class="baritemmenu"><i class="fa fa-bars"></i></a>
-          <a href="/" class="baritem">Home</a>
-          <a href="resources/practicepage.html" class="baritem">Practice</a>
-          <a href="resources/walkthroughpage.html" class="baritem">Walkthroughs</a>
-          <a href="resources/referencepage.html" class="baritem">References</a>
-          <a href="resources/aboutuspage.html" class="baritem">About Us</a>
-        </div>
+      <nav class="nav-bar">
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="resources/practicepage.html">Practice</a></li>
+        <li><a href="resources/walkthroughpage.html">Walkthroughs</a></li>
+        <li><a href="resources/referencepage.html">References</a></li>
+        <li><a href="resources/aboutuspage.html">About Us</a></li>
+
+      </ul>
+
+    </nav>
 
       <!-- Header -->
       <header class="page-container page-orange page-center" style="padding:128px 16px">
         <h1 class="pagemargin pagejumbo">MATHLAB</h1>
         <p class="page-xlarge">by The Mathlab Team</p>
-        <button class="page-button page-black page-padding-large page-large pagemargin-top">Choose Your Track</button>
+        <button class= "page-button page-black page-padding-large page-large pagemargin-top"><a href="resources/practicepage.html">Choose Your Track</a></button>
       </header>
 
       <!-- First Grid -->
+      <body>
       <div class="page-row-padding page-padding-64 page-container">
         <div class="pagecontent">
           <div class="pagetwothird">
-            <h1>Mission Statement</h1>
-            <h5 class="page-padding-32">This should be part 2.This should be part 2.This should be part 2.
-            This should be part 2.This should be part 2.This should be part 2.This should be part 2.This should be part 2.
-          This should be part 2.This should be part 2.This should be part 2.</p>
+            <h1> Welcome to MathLab!</h1>
+          <h5 class="page-padding-32"> Thank you for choosing MathLab! Not only are we a non-profitable organization here to serve you button</p>
           </div>
-          <body>
+
           <video width="1000" controls>
-            <source src="resources/mathtemp.mp4" type="video/mp4">
-            <source src="resources/mathtemp.ogg" type="video/ogg">
+            <source src="resources/mathorigins.mp4" type="video/mp4">
+            <source src="resources/mathorigins.ogg" type="video/ogg">
             Your browser does not support HTML5 video.
           </video>
 
@@ -51,7 +80,7 @@
           Video courtesy of
           <a href="https://www.khanacademy.org/" target="_blank">KhanAcademy</a>.
           </p>
-        </body>
+
           <div class="page-third page-center">
             <i class="fa fa-anchor page-padding-64 page-orange"></i>
           </div>
@@ -59,21 +88,25 @@
       </div>
 
       <!-- Second Grid -->
+      <div class="page-row-padding page-light-grey page-padding-64 page-container">
+
+          <div class="page-center">
 
           <div class="twothird">
-            <h1>This should be part 2.</h1>
-            <h5 class="padding-32-px">This should be part 2.This should be part 2.This should be part 2.</h5>
-
-            <p class="page-text-grey">This should be part 2.This should be part 2.This should be part 2.
-            This should be part 2.This should be part 2.This should be part 2.This should be part 2.</p>
+            <h1>What exactly "is" math?</h1>
+            <h5 class="padding-32-px">Mathematics, or math, is the study of numbers and how they are related to each other and to the real world.
+               Math is as important as language. In fact, people sometimes describe math as a kind of language.
+                Everyone uses math every day—to tell time, to play games, to cook, to build things,
+                 and to do almost any kind of work.</h5>
           </div>
         </div>
+      <div class="page-container page-black page-center page-opacity">
+          <h1 class="pagemargin page-xlarge"><p style="padding:10px 1px; font-size: 75%">Quote of the day: "So stick to the fight when you're hardest hit,</p>
+                                                                  <p style="padding:10px 1px; font-size: 75%">It's when things seem worst that you must not quit!"
+                                                                  - Anonymous</p>
+        </h1>
       </div>
-
-      <div class="page-container page-black page-center page-opacity page-padding-64">
-          <h1 class="pagemargin page-xlarge">Quote of the day: abcdefghijklmnoqrstuvwxyz</h1>
-      </div>
-
+</body>
       <!-- Footer -->
       <footer class="page-container page-padding-64 page-center page-opacity">
         <div class="page-xlarge page-padding-32">
@@ -84,7 +117,6 @@
           <i class="twitter hover-opacity"> Twitter </i>
           <i class="inkedin hover-opacity"></i>
        </div>
-     <p>abcdefghijklmnoqrstuvwxyz<a href="" target="">abcdefghijklmnoqrstuvwxyz</a></p>
+     <p>MathLab</p>
    </footer>
-
 </html>
