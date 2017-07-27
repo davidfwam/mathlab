@@ -17,7 +17,7 @@ function Powers(){
 }
 
 function setup() {
-  $(".function").append("<p>" + n2 + "^" + n1 + "= </p>");
+  $(".function").append("<p>" + n2 + "<sup>" + n1 + "</sup> = </p>");
   $("#user_input").keydown(function(event) {
 
       if (event.keyCode == 13) {
