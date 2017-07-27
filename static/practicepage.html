@@ -10,19 +10,45 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .page-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
 </style>
 
 
 <!-- Navbar -->
-<div class="topmenu">
-  <div class="page-bar page-orange page-card-2 page-left-align page-large">
-    <a class="baritemmenu"><i class="fa fa-bars"></i></a>
-    <a href="/" class="baritem">Home</a>
-    <a href="practicepage.html" class="baritem">Practice</a>
-    <a href="walkthroughpage.html" class="baritem">Walkthroughs</a>
-    <a href="referencepage.html" class="baritem">References</a>
-    <a href="aboutuspage.html" class="baritem">About Us</a>
-  </div>
+<nav class="nav-bar">
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li><a href="practicepage.html">Practice</a></li>
+  <li><a href="walkthroughpage.html">Walkthroughs</a></li>
+  <li><a href="referencepage.html">References</a></li>
+  <li><a href="aboutuspage.html">About Us</a></li>
+
+</ul>
+
+</nav>
 
 <!-- Header -->
 <header class="page-container page-orange page-center" style="padding:84px 16px">
