@@ -306,9 +306,7 @@ a {
   vertical-align:top;
 }
 
-.del-table th:first-child,.del-table td:first-child,.del-table-all th:first-child,.del-table-all td:first-child {
-  padding-left:16px;
-}
+
 
 .page-button {
   border:none;
@@ -354,10 +352,7 @@ a {
   padding:8px 16px;
 }
 
-.page-button:first-child,.del-dropdown-click:hover > .page-button:first-child {
-  background-color:#ccc;
-  color:#000;
-}
+
 
 .page-bar-block ,.page-bar-block {
   width:100%;
@@ -420,10 +415,6 @@ a {
   padding:4px 8px;
 }
 
-.difficulty-button:first-child,.del-dropdown-click:hover > .difficulty-button:first-child {
-  background-color:#ccc;
-  color:#000;
-}
 
 .page-bar-block ,.page-bar-block {
   width:100%;
